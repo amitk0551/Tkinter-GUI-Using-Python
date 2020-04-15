@@ -1,0 +1,30 @@
+from tkinter import *
+from tkinter import ttk
+import database
+
+win = Tk()
+win.geometry("500x200")
+
+
+heading =  Label(win, text="Product List", justify=CENTER )
+l1 = Label(win, text="Product ID")
+l2 = Label(win, text="Product Name")
+l3 = Label(win, text="Qty on hand")
+l4 = Label(win, text="Product Unit Price")
+l5 = Label(win, text="Re-oder")
+l6 = Label(win, text="Update")
+l7 = Label(win, text="Delete")
+l8 = Label(win, text="Sale")
+
+heading.grid(row=1, column = 4, sticky = W, padx = 20, pady = 20)
+l1.grid(row=4, column = 1, sticky = W , pady = 2, padx =2)
+l2.grid(row=4, column = 2, sticky = W , pady = 2, padx =2)
+l3.grid(row=4, column = 3, sticky = W , pady = 2, padx =2)
+l4.grid(row=4, column = 4, sticky = W , pady = 2, padx =2)
+l5.grid(row=4, column = 5, sticky = W , pady = 2, padx =2)
+l6.grid(row=4, column = 6, sticky = W , pady = 2, padx =2)
+l7.grid(row=4, column = 7, sticky = W , pady = 2, padx =2)
+l8.grid(row=4, column = 8, sticky = W , pady = 2, padx =2)
+
+
+win.mainloop()
